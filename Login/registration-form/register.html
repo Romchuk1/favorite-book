@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Форма реєстрації</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Реєстрація</h1>
+        <form action="/submit" method="POST">
+            
+            <div>
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="user_name" required>
+            </div>
+
+            <div>
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="user_email" required>
+            </div>
+
+            <div>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="user_password" required>
+            </div>
+
+            <div>
+                <label for="confirm">Підтвердити пароль</label>
+                <input type="password" id="confirm" name="confirm" required>
+            </div>
+
+            <div>
+                <label for="male">Чоловік</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="female">Жінка</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </div>
+
+            <div>
+                <label for="country">Країна:</label>
+                <select id="country" name="user_country" required>
+                    <option value="">-- Оберіть країну --</option>
+                    <option value="Ukraine">Україна</option>
+                    <option value="USA">США</option>
+                    <option value="France">Франція</option>
+                    <option value="England">Англія</option>
+                    <option value="Poland">Польща</option>
+                    <option value="Germany">Німеччина</option>
+                    <option value="China">Китай</option>
+                </select>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    Погоджуюсь з умовами
+                </label>
+            </div>
+
+            <div>
+                <input type="submit" value="Зареєструватися">
+            </div>
+            
+        </form>
+    </body>
+</html>
